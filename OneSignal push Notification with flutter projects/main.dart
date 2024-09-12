@@ -28,7 +28,7 @@ void main() async {
 
 class MyApp extends StatelessWidget {
 
-  const MyApp({super.key})
+  const MyApp({super.key});
 
 
   @override
@@ -40,6 +40,9 @@ class MyApp extends StatelessWidget {
           child: TextButton(
             onPressed: () async {
               print("TextButton pressed");
+              // Player ID
+              var id = OneSignal.User.pushSubscription.id.toString();
+              print(id);
             },
             child: Text("Send OneSignal Token to Node.js"),
           ),

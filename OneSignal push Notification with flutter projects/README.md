@@ -5,6 +5,8 @@
 # 2024
 # https://www.youtube.com/watch?v=v2BzkbCC8CM
 
+# https://github.com/OneSignal/OneSignal-Flutter-SDK/blob/main/MIGRATION_GUIDE.md
+
 Firebase -> Add Project -> untitled -> Create Project
 
 Project Overview -> Project Settings -> Cloud Messaging
