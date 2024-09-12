@@ -1,5 +1,11 @@
 # https://documentation.onesignal.com/docs/keys-and-ids#generate-new-user-auth-key
 
+# https://stackoverflow.com/questions/42709827/send-notification-to-specific-user-using-onesignal
+
+# https://stackoverflow.com/questions/72271906/how-to-push-web-notification-for-specified-user-or-player-in-one-signal
+
+# https://stackoverflow.com/questions/38366156/onesignal-sending-to-targeted-users
+
 # https://github.com/berkayk/laravel-onesignal
 
 ```
