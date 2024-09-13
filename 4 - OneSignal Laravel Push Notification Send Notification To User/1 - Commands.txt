@@ -1,0 +1,19 @@
+Here’s how you can handle sending notifications to specific users using OneSignal in a Laravel and Flutter setup:
+
+# https://laravel.com/docs/11.x/sanctum#installation
+
+```
+php artisan install:api
+```
+
+### 1. **Storing Player IDs in the Database**
+
+Whenever a user logs in or logs out, their OneSignal Player ID needs to be captured and stored in the database.
+
+#### Laravel: Store Player ID on Login
+In your Laravel application, when the user logs in, capture their Player ID (passed from Flutter) and store it in the database.
+
+**Migration Example:**
+```php
+php artisan make:migration add_player_id_to_users_table
+```

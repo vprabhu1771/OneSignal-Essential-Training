@@ -83,39 +83,7 @@ public function logout(Request $request)
 
 In your Flutter app, capture the OneSignal Player ID when the user logs in and log out, and send it to your Laravel backend.
 
-#### Flutter: Initialize OneSignal
 
-
-#### Flutter: Send Player ID to Laravel on Login
-```dart
-void login(String email, String password) async {
-  var deviceState = await OneSignal.shared.getDeviceState();
-  String? playerId = deviceState?.userId;
-  
-  var response = await http.post(
-    Uri.parse('https://your-laravel-backend.com/api/login'),
-    body: {
-      'email': email,
-      'password': password,
-      'player_id': playerId, // Send player_id along with login credentials
-    },
-  );
-  
-  // Handle login response
-}
-```
-
-#### Flutter: Remove Player ID on Logout
-```dart
-void logout() async {
-  var response = await http.post(
-    Uri.parse('https://your-laravel-backend.com/api/logout'),
-  );
-
-  OneSignal.shared.logoutEmail();
-  // Handle logout response
-}
-```
 
 ### Summary:
 - **Laravel:** Store the OneSignal `player_id` during login and remove it on logout. Send notifications using OneSignal’s API by targeting the `player_id`.
